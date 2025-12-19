@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills | Waseem Ahamed</title>
+    <meta name="description" content="Technical skills in cybersecurity, ethical hacking, and frontend development.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+});
+</script>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">Waseem<span>Ahamed</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Skills Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="glitch" data-text="MY SKILLS">MY SKILLS</h1>
+        <p class="subtitle">Technical Expertise & Hands-On Knowledge</p>
+    </div>
+    <div class="scan-line"></div>
+</section>
+
+
+<!-- Skills Grid -->
+<section class="services-section">
+    <div class="container">
+        <div class="services-grid">
+
+            <!-- Skill 1 -->
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cybersecurity & SOC Skills</h3>
+                <p>Foundational skills in monitoring, analysis, and incident response.</p>
+                <ul class="service-features">
+                    <li>SIEM Monitoring (Basic)</li>
+                    <li>Threat Detection</li>
+                    <li>Incident Response Support</li>
+                    <li>Vulnerability Assessment</li>
+                </ul>
+                <a href="contact.html" class="service-btn">Details</a>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Building responsive, modern, and secure user interfaces.</p>
+                <ul class="service-features">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>UI / UX Implementation</li>
+                    <li>Performance Optimization</li>
+                </ul>
+                <a href="contact.html" class="service-btn">Details</a>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <h3>Ethical Hacking Basics</h3>
+                <p>Understanding offensive security techniques and attack vectors.</p>
+                <ul class="service-features">
+                    <li>Reconnaissance & Scanning</li>
+                    <li>Web Application Basics</li>
+                    <li>OWASP Top 10 Awareness</li>
+                    <li>Linux Fundamentals</li>
+                </ul>
+                <a href="contact.html" class="service-btn">Details</a>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Tools & Technologies</h3>
+                <p>Hands-on experience with essential development and security tools.</p>
+                <ul class="service-features">
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Burp Suite (Basic)</li>
+                    <li>Linux Command Line</li>
+                </ul>
+                <a href="contact.html" class="service-btn">Details</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Hello, I'm Waseem</h4>
+                <p>Frontend Developer | Cybersecurity & Ethical Hacking Student | Passionate About Protecting the Digital World</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> waseemahamed@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Waseem Ahamed. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating Social Buttons -->
+<div class="floating-social">
+    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn github">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/waseem-ahamed-ba80b9392" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
+
+   

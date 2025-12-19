@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thank You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --cyber-green: #00ff11bb;
+}
+
+/* ================= RESET ================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= BODY ================= */
+body {
+    height: 100vh;
+    background: linear-gradient(145deg, #020403, #050707);
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e6fff5;
+}
+
+/* ================= CARD ================= */
+.thankyou-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 50px 42px;
+    background: rgba(6, 10, 8, 0.96);
+    border: 1px solid rgba(21, 255, 0, 0.152);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    position: relative;
+}
+
+/* ================= HEADER ================= */
+.thankyou-card h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--cyber-green);
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ================= SUBTEXT ================= */
+.subtext {
+    font-size: 0.95rem;
+    color: whitesmoke;
+    margin-bottom: 28px;
+}
+
+/* ================= TERMINAL ================= */
+.terminal {
+    text-align: left;
+    background: #020403;
+    border: 1px solid  #00ff37 ;
+    padding: 20px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: whitesmoke;
+}
+
+/* ================= BUTTON ================= */
+.btn-home {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 13px 34px;
+    font-size: 0.8rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.5px;
+    color: var(--cyber-green);
+    border: 1px solid var(--cyber-green);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+    background: var(--cyber-green);
+    color: #000;
+}
+
+/* ================= FOOTER ================= */
+.secure-label {
+    margin-top: 18px;
+    font-size: 0.7rem;
+    color: rgba(180, 255, 220, 0.6);
+    letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="thankyou-card">
+
+    <h1>THANK YOU</h1>
+    <p class="subtext">Your message has been send successfully.</p>
+
+    <div class="terminal" id="terminal"></div>
+
+    <a href="index.html" class="btn-home">RETURN HOME</a>
+
+    <div class="secure-label">
+        SECURE TRANSMISSION • ENCRYPTED • VERIFIED
+    </div>
+
+</div>
+
+<script>
+/* ================= TERMINAL TYPE EFFECT ================= */
+const lines = [
+    ">> Message received successfully",
+    ">> i'll review it and respond soon",
+];
+
+let i = 0;
+let j = 0;
+const speed = 35;
+const terminal = document.getElementById("terminal");
+
+function typeEffect() {
+    if (i < lines.length) {
+        if (j < lines[i].length) {
+            terminal.innerHTML += lines[i].charAt(j);
+            j++;
+            setTimeout(typeEffect, speed);
+        } else {
+            terminal.innerHTML += "<br>";
+            j = 0;
+            i++;
+            setTimeout(typeEffect, 300);
+        }
+    }
+}
+typeEffect();
+</script>
+
+</body>
+</html>
+

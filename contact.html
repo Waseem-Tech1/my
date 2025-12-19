@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Waseem Ahamed</title>
+    <meta name="description" content="Get in touch with our cybersecurity experts for a consultation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+});
+</script>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Waseem<span>Ahamed</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Contact Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="glitch" data-text="CONTACT US">CONTACT US</h1>
+        <p class="subtitle">Secure Your Systems Today</p>
+    </div>
+    <div class="scan-line"></div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" data-aos="fade-right">
+                <h2>Send Secure Message</h2>
+                <p>All messages are encrypted end-to-end</p>
+
+                <form class="contact-form"
+                      action="https://formsubmit.co/94bbd89a7ad891b381e36256c7595481"
+                      method="POST">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" name="name" required placeholder="Enter your name">
+                        <div class="input-line"></div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" name="email" required placeholder="your.email@company.com">
+                        <div class="input-line"></div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea name="message" rows="5" required placeholder="Describe your security needs..."></textarea>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <!-- FormSubmit settings -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Contact Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://waseemx.netlify.app/thanks.html">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn-neon submit-btn">
+                        <span class="btn-text">Send Secure Message</span>
+                        <i class="fas fa-lock"></i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+     </div>
+                <!-- Contact Info & Map -->
+                <div class="contact-info-container" data-aos="fade-left">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>waseemahamed@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div> 
+</section> 
+
+     <!-- Floating Social Buttons -->
+<div class="floating-social">
+    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn github">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/waseem-ahamed-ba80b9392" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" rel="noopener noreferrer" class="social-btn twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+</div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        
+        
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+                
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                   <h4>Hello, i'm Waseem</h4>
+                    <p>Frontend Developer | Cybersecurity & Ethical Hacking Student | Passionate About Protecting the Digital World</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i>waseemahamed@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Waseem Ahamed. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
