@@ -16,14 +16,26 @@
 
 <body>
 
-<!-- Navigation -->
+<!-- Mobile Menu Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
+menuToggle.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+menuToggle.classList.toggle("active");
+});
+});
+</script>
+
+<!-- Navigation -->
 <nav class="navbar">
 <div class="container">
 
 <a href="index.html" class="logo">Waseem<span>Ahamed</span></a>
 
-<button class="menu-toggle">
+<button class="menu-toggle" aria-label="Toggle navigation">
 <span class="bar"></span>
 <span class="bar"></span>
 <span class="bar"></span>
@@ -40,61 +52,38 @@
 </div>
 </nav>
 
-
-<!-- Blog Section -->
-
-<section class="hero">
-
-<div class="container">
-
-<h1 data-aos="fade-up">Cybersecurity Blog</h1>
-
-<p data-aos="fade-up" data-aos-delay="200">
-Insights about Ethical Hacking, Cybersecurity and Technology
-</p>
+<!-- Skills Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="glitch" data-text="CYBERSECURITY BLOG">CYBERSECURITY BLOG</h1>
+        <p class="subtitle">Stay ahead of the curve in cybersecurity</p>
+    </div>
+</section>
 
 
 <div class="blog-grid">
 
-<div class="blog-card" data-aos="fade-up">
+<section class="blog-section">
 
-<h3>What is Ethical Hacking?</h3>
+  <div class="blog-card">
+    <h3>What is Cybersecurity</h3>
+    <p>Learn the basics of cybersecurity and why protecting systems and networks is important in the digital world.</p>
+    <a href="post1.html">Read Article</a>
+  </div>
 
-<p>
-Ethical hacking is the process of testing systems, networks,
-and applications to find security vulnerabilities before attackers do.
-</p>
+  <div class="blog-card">
+    <h3>What is OSINT</h3>
+    <p>Discover the powerful techniques for collecting and analyzing open-source information.</p>
+    <a href="post2.html">Read Article</a>
+  </div>
 
-<a href="#" class="btn">Read More</a>
+  <div class="blog-card">
+    <h3>How Websites Get Hacked</h3>
+    <p>Understand common vulnerabilities attackers exploit to compromise websites and steal sensitive data.</p>
+    <a href="post3.html">Read Article</a>
+  </div>
 
-</div>
-
-
-<div class="blog-card" data-aos="fade-up" data-aos-delay="200">
-
-<h3>Top 5 Cybersecurity Tools</h3>
-
-<p>
-Some powerful tools used by security professionals include
-Nmap, Burp Suite, Wireshark, Metasploit and Nessus.
-</p>
-
-<a href="#" class="btn">Read More</a>
-
-</div>
-
-
-<div class="blog-card" data-aos="fade-up" data-aos-delay="400">
-
-<h3>How Websites Get Hacked</h3>
-
-<p>
-Most websites are hacked because of weak passwords,
-outdated software, or insecure code.
-</p>
-
-<a href="#" class="btn">Read More</a>
-
+</section>
 </div>
 
 </div>
@@ -106,9 +95,7 @@ outdated software, or insecure code.
 
 </section>
 
-
 <!-- Footer -->
-
 <footer class="footer">
 
 <div class="container">
@@ -147,8 +134,26 @@ outdated software, or insecure code.
 
 </footer>
 
+<!-- Floating Social Buttons -->
+<div class="floating-social">
 
+<a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" class="social-btn github">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/waseem-ahamed-ba80b9392" target="_blank" class="social-btn linkedin">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">
+<i class="fab fa-twitter"></i>
+</a>
+
+</div>
+
+<!-- Scripts -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
 
 <script>
 AOS.init({
