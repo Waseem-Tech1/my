@@ -6,7 +6,87 @@
 
 <title>What is Cybersecurity</title>
 
-<link rel="stylesheet" href="style.css">
+<!-- Cybersecurity Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* Page background */
+body{
+    margin:0;
+    padding:0;
+    background:#0a0a0a;
+    font-family:'Roboto', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Blog container */
+.blog-post{
+    background:#111;
+    max-width:800px;
+    width:90%;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,255,120,0.2);
+    border:1px solid rgba(0,255,120,0.3);
+}
+
+/* Title */
+.blog-post h1{
+    font-family:'Orbitron', sans-serif;
+    font-size:32px;
+    text-align:center;
+    color:#00ff9c;
+    margin-bottom:25px;
+}
+
+/* Paragraphs */
+.blog-post p{
+    font-size:17px;
+    line-height:1.7;
+    color:#cfcfcf;
+    margin-bottom:20px;
+}
+
+/* Back button */
+.back-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    background:#00ff9c;
+    color:#000;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* Button hover */
+.back-btn:hover{
+    background:#00cc7a;
+}
+
+/* Mobile optimization */
+@media(max-width:768px){
+
+.blog-post{
+    padding:25px;
+}
+
+.blog-post h1{
+    font-size:24px;
+}
+
+.blog-post p{
+    font-size:15px;
+}
+
+}
+
+</style>
 
 </head>
 
@@ -31,7 +111,9 @@ Cybersecurity professionals use different tools and techniques to detect, preven
 <p>
 There are different areas of cybersecurity including network security, application security, information security, and digital forensics.
 </p>
+
 <a href="blog.html" class="back-btn">← Back to Blog</a>
+
 </section>
 
 </body>

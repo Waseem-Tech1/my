@@ -4,10 +4,109 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>What is OSINT | Cybersecurity Blog</title>
-<link rel="stylesheet" href="style.css">
+<title>What is OSINT?</title>
+
+<!-- Cybersecurity Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* Page background */
+body{
+    margin:0;
+    padding:0;
+    background:#0a0a0a;
+    font-family:'Roboto', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Blog container */
+.blog-post{
+    background:#111;
+    max-width:800px;
+    width:90%;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,255,120,0.2);
+    border:1px solid rgba(0,255,120,0.3);
+}
+
+/* Title */
+.blog-post h1{
+    font-family:'Orbitron', sans-serif;
+    font-size:32px;
+    text-align:center;
+    color:#00ff9c;
+    margin-bottom:25px;
+}
+
+/* Paragraphs */
+.blog-post p{
+    font-size:17px;
+    line-height:1.7;
+    color:#cfcfcf;
+    margin-bottom:20px;
+}
+
+/* Blog Image */
+.blog-image{
+    width:100%;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+/* List styling */
+.blog-post ul{
+    color:#cfcfcf;
+    line-height:1.7;
+    padding-left:20px;
+}
+
+.blog-post li{
+    margin-bottom:10px;
+}
+
+/* Back button */
+.back-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:10px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    background:#00ff9c;
+    color:#000;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#00cc7a;
+}
+
+/* Mobile optimization */
+@media(max-width:768px){
+
+.blog-post{
+    padding:25px;
+}
+
+.blog-post h1{
+    font-size:24px;
+}
+
+.blog-post p{
+    font-size:15px;
+}
+
+}
+
+</style>
 
 </head>
+
 <body>
 
 <section class="blog-post">
@@ -19,55 +118,38 @@ OSINT, or <strong>Open Source Intelligence</strong>, is the practice of collecti
 </p>
 
 <p>
-Organizations and cybersecurity professionals use OSINT to identify threats, track digital footprints, and prevent attacks before they happen. For example, analysts may use OSINT to detect leaked credentials, monitor hacker forums, or gather information about potential targets.
+Organizations and cybersecurity professionals use OSINT to identify threats, track digital footprints, and prevent attacks before they happen. Analysts may detect leaked credentials, monitor hacker forums, or gather intelligence about potential targets.
 </p>
 
 <p>
-There are many tools and techniques in OSINT, including search engines, social media monitoring, geolocation analysis, and metadata extraction. The goal is to turn raw public information into actionable intelligence while staying completely legal and ethical.
+There are many tools and techniques in OSINT, including search engines, social media monitoring, geolocation analysis, and metadata extraction. The goal is to turn raw public information into actionable intelligence while staying legal and ethical.
 </p>
 
 <p>
-OSINT is widely used in cybersecurity, law enforcement, corporate security, and even competitive intelligence. It allows investigators to uncover threats, map networks, and gain insights without breaking laws or accessing restricted systems.
+OSINT is widely used in cybersecurity, law enforcement, corporate security, and competitive intelligence. It helps investigators uncover threats and map digital networks.
 </p>
 
 <p>
-In short, OSINT is the art and science of finding intelligence in plain sight. By mastering OSINT, cybersecurity professionals can predict threats, defend organizations, and make smarter decisions based on publicly available data.
+In short, OSINT is the art and science of finding intelligence in plain sight.
 </p>
-<div class="blog-post">
 
-  <img src="OIP.webp" alt="OSINT TOOLS" class="blog-image">
+<img src="OIP.webp" alt="OSINT Tools" class="blog-image">
 
- <p>
 <ul>
-    <li><strong>Maltego:</strong> Industry-leading OSINT tool for link analysis and visualization, mapping relationships between people, domains, emails, and infrastructure.</li>
-
-    <li><strong>Shodan:</strong> The search engine for internet-connected devices, servers, IoT devices, webcams, and exposed services.</li>
-
-    <li><strong>Censys:</strong> Discover and monitor internet-facing assets, with rich data on servers, certificates, and protocols.</li>
-
-    <li><strong>SpiderFoot:</strong> Automated OSINT reconnaissance platform that collects intelligence from hundreds of public sources for domains, IPs, and individuals.</li>
-
-    <li><strong>Amass:</strong> Reconnaissance framework for domain enumeration, subdomain discovery, and network mapping.</li>
-
-    <li><strong>theHarvester:</strong> Gathers email addresses, domains, subdomains, IPs, and employee info from public sources and search engines.</li>
-
-    <li><strong>Recon-ng:</strong> Modular reconnaissance framework for collecting OSINT, integrates with APIs for automated data gathering.</li>
-
-    <li><strong>Have I Been Pwned:</strong> Breach intelligence tool to check whether emails or passwords were exposed in known data breaches.</li>
-
-    <li><strong>OSINT Framework:</strong> A web-based directory of OSINT tools organized by category, making it easy to find the right tool for each task.</li>
-
-    <li><strong>FOCA:</strong> Metadata analysis tool that extracts hidden information from documents, helping in footprinting targets.</li>
-
-    <li><strong>BuiltWith:</strong> Reveals the technologies and frameworks used by websites, useful for reconnaissance and competitive analysis.</li>
-
-    <li><strong>Social-Searcher:</strong> Social media monitoring tool to track mentions, hashtags, and profiles across platforms.</li>
-
-    <li><strong>Metagoofil:</strong> Extracts metadata from public documents (PDF, DOC, PPT) to collect usernames, paths, and software versions.</li>
+<li><strong>Maltego:</strong> Link analysis and data visualization platform.</li>
+<li><strong>Shodan:</strong> Search engine for internet-connected devices.</li>
+<li><strong>Censys:</strong> Platform for discovering internet infrastructure.</li>
+<li><strong>SpiderFoot:</strong> Automated OSINT reconnaissance tool.</li>
+<li><strong>Amass:</strong> Domain enumeration and attack surface mapping.</li>
+<li><strong>theHarvester:</strong> Collects emails, domains, and subdomains.</li>
+<li><strong>Recon-ng:</strong> Modular reconnaissance framework.</li>
+<li><strong>Have I Been Pwned:</strong> Checks if emails were leaked in breaches.</li>
+<li><strong>OSINT Framework:</strong> Directory of OSINT tools.</li>
+<li><strong>FOCA:</strong> Metadata analysis for documents.</li>
+<li><strong>BuiltWith:</strong> Detects technologies used by websites.</li>
+<li><strong>Social-Searcher:</strong> Social media monitoring tool.</li>
+<li><strong>Metagoofil:</strong> Extracts metadata from public documents.</li>
 </ul>
-</p>
-</div>
-
 
 <a href="blog.html" class="back-btn">← Back to Blog</a>
 
